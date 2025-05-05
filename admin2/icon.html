@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html class="light-style layout-navbar-fixed layout-menu-fixed layout-compact" data-assets-path="assets/" data-template="vertical-menu-template" data-theme="theme-default" dir="rtl" lang="fa">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport"/>
+    <title>آیکون‌ها | Vuexy - قالب مدیریت بوت استرپ</title>
+    <meta content="مدیریت آیکون‌ها در پنل ادمین" name="description"/>
+    <!-- Favicon -->
+    <link href="assets/img/favicon/favicon.ico" rel="icon" type="image/x-icon"/>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="assets/vendor/fonts/fontawesome.css" rel="stylesheet"/>
+    <link href="assets/vendor/fonts/tabler-icons.css" rel="stylesheet"/>
+    <link href="assets/vendor/fonts/flag-icons.css" rel="stylesheet"/>
+    <!-- Core CSS -->
+    <link class="template-customizer-core-css" href="assets/vendor/css/rtl/core.css" rel="stylesheet"/>
+    <link class="template-customizer-theme-css" href="assets/vendor/css/rtl/theme-default.css" rel="stylesheet"/>
+    <link href="assets/css/demo.css" rel="stylesheet"/>
+    <!-- Vendors CSS -->
+    <link href="assets/vendor/libs/node-waves/node-waves.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/typeahead-js/typeahead.css" rel="stylesheet"/>
+    <!-- Page CSS -->
+    <link href="assets/vendor/css/pages/page-icons.css" rel="stylesheet"/>
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+    <script src="assets/vendor/js/template-customizer.js"></script>
+    <script src="assets/js/config.js"></script>
+    <link href="assets/css/rtl.css" rel="stylesheet"/>
+    <!-- Custom CSS for Icon Preview -->
+    <style>
+        #iconPreview {
+            margin-top: 10px;
+            font-size: 24px;
+            min-height: 30px;
+        }
+        .icon-card {
+            transition: transform 0.2s;
+        }
+        .icon-card:hover {
+            transform: scale(1.05);
+        }
+        .invalid-feedback {
+            display: none;
+            color: #dc3545;
+            font-size: 0.875rem;
+        }
+        .is-invalid ~ .invalid-feedback {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+<!-- Layout wrapper -->
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        <!-- Menu -->
+        <aside class="layout-menu menu-vertical menu bg-menu-theme" id="layout-menu">
+            <div class="app-brand demo">
+                <a class="app-brand-link" href="index.html">
+                    <span class="app-brand-logo demo">
+                        <svg fill="none" height="22" viewBox="0 0 32 22" width="32" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="#7367F0" fill-rule="evenodd"/>
+                            <path clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" fill-rule="evenodd" opacity="0.06"/>
+                            <path clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" fill-rule="evenodd" opacity="0.06"/>
+                            <path clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="#7367F0" fill-rule="evenodd"/>
+                        </svg>
+                    </span>
+                    <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+                </a>
+                <a class="layout-menu-toggle menu-link text-large ms-auto" href="javascript:void(0);">
+                    <i class="ti menu-toggle-icon d-none d-xl-block ti-sm align-middle"></i>
+                    <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
+                </a>
+            </div>
+            <div class="menu-inner-shadow"></div>
+            <ul class="menu-inner py-1">
+                <!-- منوی کامل (برای کوتاه شدن حذف شده، از کد اولیه کپی کنید) -->
+            </ul>
+        </aside>
+        <!-- / Menu -->
+        <!-- Layout container -->
+        <div class="layout-page">
+            <!-- Navbar -->
+            <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+                <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                    <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                        <i class="ti ti-menu-2 ti-sm"></i>
+                    </a>
+                </div>
+                <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                    <div class="navbar-nav align-items-center">
+                        <div class="nav-item navbar-search-wrapper mb-0">
+                            <a class="nav-item nav-link search-toggler d-flex align-items-center px-0" href="javascript:void(0);">
+                                <i class="ti ti-search ti-md me-2 h-mirror"></i>
+                                <span class="d-none d-md-inline-block text-muted">جستجو (/+Ctrl)</span>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav flex-row align-items-center ms-auto">
+                        <!-- Language, Style Switcher, Quick Links, Notification, User (بدون تغییر) -->
+                    </ul>
+                </div>
+                <div class="navbar-search-wrapper search-input-wrapper d-none">
+                    <input aria-label="جستجو..." class="form-control search-input container-xxl border-0" placeholder="جستجو..." type="text"/>
+                    <i class="ti ti-x ti-sm search-toggler cursor-pointer"></i>
+                </div>
+            </nav>
+            <!-- / Navbar -->
+            <!-- Content wrapper -->
+            <div class="content-wrapper">
+                <!-- Content -->
+                <div class="container-xxl flex-grow-1 container-p-y">
+                    <h4 class="py-3 mb-4">
+                        <span class="text-muted fw-light">آیکون‌ها /</span> FontAwesome
+                    </h4>
+                    <p>لیست کامل آیکون‌های FontAwesome در لینک <a href="https://fontawesome.com/" target="_blank"><bdi>https://fontawesome.com/</bdi></a> قابل مشاهده است.</p>
+
+                    <!-- تب‌ها -->
+                    <ul class="nav nav-tabs" id="iconTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="list-icon-tab" data-bs-toggle="tab" data-bs-target="#list-icon" type="button" role="tab" aria-controls="list-icon" aria-selected="true">لیست آیکون‌ها</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="create-icon-tab" data-bs-toggle="tab" data-bs-target="#create-icon" type="button" role="tab" aria-controls="create-icon" aria-selected="false">ایجاد آیکون</button>
+                        </li>
+                    </ul>
+
+                    <!-- محتوای تب‌ها -->
+                    <div class="tab-content" id="iconTabsContent">
+                        <!-- تب لیست آیکون‌ها -->
+                        <div class="tab-pane fade show active" id="list-icon" role="tabpanel" aria-labelledby="list-icon-tab">
+                            <div class="d-flex flex-wrap" id="icons-container">
+                                <!-- آیکون‌های پیش‌فرض استاتیک -->
+                                <div class="card icon-card cursor-pointer text-center mb-4 mx-2">
+                                    <div class="card-body">
+                                        <i class="fab fa-500px mb-2"></i>
+                                        <p class="icon-name text-capitalize text-truncate mb-0">500px</p>
+                                    </div>
+                                </div>
+                                <div class="card icon-card cursor-pointer text-center mb-4 mx-2">
+                                    <div class="card-body">
+                                        <i class="fas fa-star mb-2"></i>
+                                        <p class="icon-name text-capitalize text-truncate mb-0">Star</p>
+                                    </div>
+                                </div>
+                                <div class="card icon-card cursor-pointer text-center mb-4 mx-2">
+                                    <div class="card-body">
+                                        <i class="fas fa-heart mb-2"></i>
+                                        <p class="icon-name text-capitalize text-truncate mb-0">Heart</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mx-auto gap-3">
+                                <a class="btn btn-primary" href="https://fontawesome.com/" target="_blank">آیکون‌های بیشتر</a>
+                                <a class="btn btn-primary" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation//Icons.html" target="_blank">روش استفاده</a>
+                            </div>
+                        </div>
+
+                        <!-- تب ایجاد آیکون -->
+                        <div class="tab-pane fade" id="create-icon" role="tabpanel" aria-labelledby="create-icon-tab">
+                            <div class="card p-4">
+                                <h5>ایجاد آیکون جدید</h5>
+                                <form id="createIconForm">
+                                    <div class="mb-3">
+                                        <label for="iconTag" class="form-label">تگ آیکون (مثال: &lt;i class=&quot;fa-solid fa-face-smile&quot;&gt;&lt;/i&gt;)</label>
+                                        <input type="text" class="form-control" id="iconTag" placeholder="تگ کامل آیکون را وارد کنید" required>
+                                        <div class="invalid-feedback">لطفاً تگ معتبر آیکون را وارد کنید (مانند &lt;i class=&quot;fa-solid fa-face-smile&quot;&gt;&lt;/i&gt;).</div>
+                                        <div id="iconPreview"></div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="iconName" class="form-label">نام آیکون</label>
+                                        <input type="text" class="form-control" id="iconName" placeholder="نام آیکون را وارد کنید" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">اضافه کردن آیکون</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Content -->
+                <!-- Footer -->
+                <footer class="content-footer footer bg-footer-theme">
+                    <div class="container-xxl">
+                        <div class="footer-container d-flex align-items-center justify-content-between py-2 flex-md-row flex-column">
+                            <div> ©
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                                , ارائه شده توسط
+                                <span class="text-danger byte-hover">بایت ‌مَستر</span>
+                                در سایت
+                                <a class="fw-medium" href="#support" target="_blank">راستچین</a>
+                            </div>
+                            <div class="d-none d-lg-inline-block">
+                                <a class="footer-link me-4" href="#support" target="_blank">لایسنس</a>
+                                <a class="footer-link me-4" href="#support" target="_blank">قالب‌های بیشتر</a>
+                                <a class="footer-link me-4" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/" target="_blank">مستندات</a>
+                                <a class="footer-link d-none d-sm-inline-block" href="#support-theme" target="_blank">پشتیبانی</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- / Footer -->
+                <div class="content-backdrop fade"></div>
+            </div>
+            <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+    </div>
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+    <!-- Drag Target Area -->
+    <div class="drag-target"></div>
+</div>
+<!-- / Layout wrapper -->
+
+<!-- Core JS -->
+<script src="assets/vendor/libs/jquery/jquery.js"></script>
+<script src="assets/vendor/libs/popper/popper.js"></script>
+<script src="assets/vendor/js/bootstrap.js"></script>
+<script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+<script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+<script src="assets/vendor/libs/hammer/hammer.js"></script>
+<script src="assets/vendor/libs/i18n/i18n.js"></script>
+<script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+<script src="assets/vendor/js/menu.js"></script>
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>
+
+<!-- Icon Management Script -->
+<script>
+    // آرایه‌ای برای ذخیره آیکون‌ها (شبیه‌سازی پایگاه داده)
+    let icons = [
+        { class: 'fab fa-500px', name: '500px' },
+        { class: 'fas fa-star', name: 'Star' },
+        { class: 'fas fa-heart', name: 'Heart' }
+    ];
+
+    // رندر کردن آیکون‌ها در صفحه
+    function renderIcons() {
+        const container = document.getElementById('icons-container');
+        container.innerHTML = '';
+        icons.forEach(icon => {
+            const iconCard = `
+                <div class="card icon-card cursor-pointer text-center mb-4 mx-2">
+                    <div class="card-body">
+                        <i class="${icon.class} mb-2"></i>
+                        <p class="icon-name text-capitalize text-truncate mb-0">${icon.name}</p>
+                    </div>
+                </div>
+            `;
+            container.insertAdjacentHTML('beforeend', iconCard);
+        });
+    }
+
+    // استخراج کلاس از تگ آیکون
+    function extractClassFromTag(tag) {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(tag, 'text/html');
+        const iconElement = doc.querySelector('i');
+        return iconElement ? iconElement.className : '';
+    }
+
+    // اعتبارسنجی تگ آیکون
+    function isValidIconTag(tag) {
+        const regex = /^<i\s+class\s*=\s*["'][\w\s-]+["']\s*>\s*<\/i>$/;
+        return regex.test(tag.trim());
+    }
+
+    // پیش‌نمایش آیکون هنگام تایپ
+    document.getElementById('iconTag').addEventListener('input', function() {
+        const iconTag = this.value.trim();
+        const previewContainer = document.getElementById('iconPreview');
+        previewContainer.innerHTML = '';
+
+        if (iconTag) {
+            if (isValidIconTag(iconTag)) {
+                this.classList.remove('is-invalid');
+                const iconClass = extractClassFromTag(iconTag);
+                if (iconClass) {
+                    const previewIcon = document.createElement('i');
+                    previewIcon.className = iconClass;
+                    previewContainer.appendChild(previewIcon);
+                }
+            } else {
+                this.classList.add('is-invalid');
+            }
+        } else {
+            this.classList.remove('is-invalid');
+        }
+    });
+
+    // مدیریت ارسال فرم
+    document.getElementById('createIconForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const iconTag = document.getElementById('iconTag').value.trim();
+        const iconName = document.getElementById('iconName').value.trim();
+
+        if (!isValidIconTag(iconTag)) {
+            document.getElementById('iconTag').classList.add('is-invalid');
+            return;
+        }
+
+        const iconClass = extractClassFromTag(iconTag);
+
+        if (iconClass && iconName) {
+            // اضافه کردن آیکون به آرایه
+            icons.push({ class: iconClass, name: iconName });
+
+            // رندر مجدد آیکون‌ها
+            renderIcons();
+
+            // پاک کردن فرم
+            this.reset();
+            document.getElementById('iconPreview').innerHTML = '';
+            document.getElementById('iconTag').classList.remove('is-invalid');
+
+            // تغییر به تب لیست آیکون‌ها
+            document.getElementById('list-icon-tab').click();
+        }
+    });
+
+    // رندر اولیه آیکون‌ها
+    renderIcons();
+</script>
+</body>
+</html>

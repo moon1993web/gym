@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html class="light-style layout-navbar-fixed layout-menu-fixed layout-compact" data-assets-path="assets/" data-template="vertical-menu-template" data-theme="theme-default" dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport"/>
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>مدیریت صفحات | Vuexy</title>
+    <meta content="" name="description"/>
+    <!-- Favicon -->
+    <link href="assets/img/favicon/favicon.ico" rel="icon" type="image/x-icon"/>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="assets/vendor/fonts/fontawesome.css" rel="stylesheet"/>
+    <link href="assets/vendor/fonts/tabler-icons.css" rel="stylesheet"/>
+    <link href="assets/vendor/fonts/flag-icons.css" rel="stylesheet"/>
+    <!-- Core CSS -->
+    <link class="template-customizer-core-css" href="assets/vendor/css/rtl/core.css" rel="stylesheet"/>
+    <link class="template-customizer-theme-css" href="assets/vendor/css/rtl/theme-default.css" rel="stylesheet"/>
+    <link href="assets/css/demo.css" rel="stylesheet"/>
+    <link href="assets/css/custom-styles.css" rel="stylesheet"/>
+    <!-- Vendors CSS -->
+    <link href="assets/vendor/libs/node-waves/node-waves.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/typeahead-js/typeahead.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/quill/typography.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/quill/katex.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/quill/editor.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/apex-charts/apex-charts.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/flatpickr/flatpickr.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/bootstrap-datepicker/bootstrap-datepicker.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/bootstrap-daterangepicker/bootstrap-daterangepicker.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/jquery-timepicker/jquery-timepicker.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/pickr/pickr-themes.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/swiper/swiper.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css" rel="stylesheet"/>
+    <!-- Page CSS -->
+    <link href="assets/vendor/css/pages/cards-advance.css" rel="stylesheet"/>
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+    <script src="assets/vendor/js/template-customizer.js"></script>
+    <script src="assets/js/config.js"></script>
+    <!-- Better experience of RTL -->
+    <link href="assets/css/rtl.css" rel="stylesheet"/>
+</head>
+
+<body>
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        <!-- Menu -->
+        <aside class="layout-menu menu-vertical menu bg-menu-theme" id="layout-menu">
+            <div class="app-brand demo">
+                <a class="app-brand-link" href="../index.html">
+                    <span class="app-brand-logo demo">
+                        <svg fill="none" height="22" viewBox="0 0 32 22" width="32" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="#7367F0" fill-rule="evenodd"/>
+                            <path clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" fill-rule="evenodd" opacity="0.06"/>
+                            <path clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" fill-rule="evenodd" opacity="0.06"/>
+                            <path clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="#7367F0" fill-rule="evenodd"/>
+                        </svg>
+                    </span>
+                    <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+                </a>
+                <a class="layout-menu-toggle menu-link text-large ms-auto" href="javascript:void(0);">
+                    <i class="ti menu-toggle-icon d-none d-xl-block ti-sm align-middle"></i>
+                    <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
+                </a>
+            </div>
+            <div class="menu-inner-shadow"></div>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+            <!-- Navbar -->
+            <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+                <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                    <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                        <i class="ti ti-menu-2 ti-sm"></i>
+                    </a>
+                </div>
+                <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                    <!-- Search -->
+                    <div class="navbar-nav align-items-center">
+                        <div class="nav-item navbar-search-wrapper mb-0">
+                            <a class="nav-item nav-link search-toggler d-flex align-items-center px-0" href="javascript:void(0);">
+                                <i class="ti ti-search ti-md me-2 h-mirror"></i>
+                                <span class="d-none d-md-inline-block text-muted">جستجو (/+Ctrl)</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /Search -->
+
+                    <ul class="navbar-nav flex-row align-items-center ms-auto">
+                        <!-- Language -->
+                        <li class="nav-item dropdown-language dropdown me-2 me-xl-0">
+                            <a class="nav-link dropdown-toggle hide-arrow" data-bs-toggle="dropdown" href="javascript:void(0);">
+                                <i class="ti ti-language rounded-circle ti-md"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" data-language="fa" data-text-direction="rtl" href="javascript:void(0);">
+                                        <span class="align-middle">فارسی</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" data-language="en" data-text-direction="ltr" href="javascript:void(0);">
+                                        <span class="align-middle">انگلیسی</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--/ Language -->
+
+                        <!-- Style Switcher -->
+                        <li class="nav-item dropdown-style-switcher dropdown me-2 me-xl-0">
+                            <a class="nav-link dropdown-toggle hide-arrow" data-bs-toggle="dropdown" href="javascript:void(0);">
+                                <i class="ti ti-md"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-styles">
+                                <li>
+                                    <a class="dropdown-item" data-theme="light" href="javascript:void(0);">
+                                        <span class="align-middle"><i class="ti ti-sun me-2"></i>روز</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" data-theme="dark" href="javascript:void(0);">
+                                        <span class="align-middle"><i class="ti ti-moon me-2"></i>شب</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- / Style Switcher-->
+
+                        <!-- View Website Icon -->
+                        <li class="nav-item me-2 me-xl-0">
+                            <a class="nav-link" href="https://yourwebsite.com" target="_blank">
+                                <i class="ti ti-external-link ti-md"></i>
+                                <span class="d-none d-md-inline-block">مشاهده سایت</span>
+                            </a>
+                        </li>
+                        <!-- / View Website Icon -->
+                    </ul>
+                </div>
+
+                <!-- Search Small Screens -->
+                <div class="navbar-search-wrapper search-input-wrapper d-none">
+                    <input aria-label="جستجو..." class="form-control search-input container-xxl border-0" placeholder="جستجو..." type="text"/>
+                    <i class="ti ti-x ti-sm search-toggler cursor-pointer"></i>
+                </div>
+            </nav>
+            <!-- / Navbar -->
+
+            <div class="content-wrapper">
+                <!-- Content -->
+                <div class="container-xxl flex-grow-1 container-p-y">
+                    <h4 class="py-3 mb-4">
+                        <span class="text-muted fw-light">صفحات /</span> مدیریت صفحات
+                    </h4>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <ul class="nav nav-tabs" id="pagesTabs" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="list-tab" data-bs-toggle="tab" data-bs-target="#pages-list" type="button" role="tab" aria-controls="pages-list" aria-selected="true">لیست صفحات</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="add-tab" data-bs-toggle="tab" data-bs-target="#pages-add" type="button" role="tab" aria-controls="pages-add" aria-selected="false">ایجاد/ویرایش صفحه</button>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content mt-4" id="pagesTabsContent">
+                                        <!-- تب لیست صفحات -->
+                                        <div class="tab-pane fade show active" id="pages-list" role="tabpanel" aria-labelledby="list-tab">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>عنوان</th>
+                                                        <th>توضیحات کامل</th>
+                                                        <th>عملیات</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>درباره ما</td>
+                                                        <td>لورم ایپسوم متن ساختگی با تولید سادگی...</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">عملیات</button>
+                                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                                    <li><button class="dropdown-item" onclick="alert('ویرایش صفحه 1')">ویرایش</button></li>
+                                                                    <li><button class="dropdown-item text-danger" onclick="alert('حذف صفحه 1')">حذف</button></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>تماس با ما</td>
+                                                        <td>لورم ایپسوم متن ساختگی با تولید سادگی...</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">عملیات</button>
+                                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                                    <li><button class="dropdown-item" onclick="alert('ویرایش صفحه 2')">ویرایش</button></li>
+                                                                    <li><button class="dropdown-item text-danger" onclick="alert('حذف صفحه 2')">حذف</button></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <!-- تب ایجاد/ویرایش صفحه -->
+                                        <div class="tab-pane fade" id="pages-add" role="tabpanel" aria-labelledby="add-tab">
+                                            <form onsubmit="alert('صفحه ذخیره شد'); return false;">
+                                                <div class="row g-3">
+                                                    <!-- عنوان -->
+                                                    <div class="col-md-12">
+                                                        <label class="form-label" for="page-title">عنوان</label>
+                                                        <input class="form-control" type="text" id="page-title" placeholder="عنوان صفحه" required />
+                                                    </div>
+                                                    <!-- توضیحات کامل -->
+                                                    <div class="col-md-12">
+                                                        <label class="form-label" for="page-description">توضیحات کامل</label>
+                                                        <div id="full-editor"></div>
+                                                        <input type="hidden" id="page-description" name="description" required />
+                                                    </div>
+                                                    <!-- دکمه‌ها -->
+                                                    <div class="col-12 d-flex justify-content-between">
+                                                        <button type="reset" class="btn btn-label-secondary">انصراف</button>
+                                                        <button type="submit" class="btn btn-primary">ذخیره</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Content -->
+            </div>
+        </div>
+        <!-- / Layout page -->
+    </div>
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+</div>
+<!-- / Layout wrapper -->
+
+<!-- Core JS -->
+<script src="assets/vendor/libs/jquery/jquery.js"></script>
+<script src="assets/vendor/libs/popper/popper.js"></script>
+<script src="assets/vendor/js/bootstrap.js"></script>
+<script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+<script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+<script src="assets/vendor/libs/hammer/hammer.js"></script>
+<script src="assets/vendor/libs/quill/katex.js"></script>
+<script src="assets/vendor/libs/quill/quill.js"></script>
+<script src="assets/js/forms-editors.js"></script>
+<script src="assets/vendor/libs/i18n/fa.js"></script>
+<script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+<script src="assets/vendor/js/menu.js"></script>
+<!-- Vendors JS -->
+<script src="assets/vendor/libs/apex-charts/apexcharts.js"></script>
+<script src="assets/vendor/libs/swiper/swiper.js"></script>
+<script src="assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+<script src="assets/vendor/libs/datatables-bs5/i18n/fa.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jalaali-js/dist/jalaali.min.js"></script>
+<script src="assets/vendor/libs/moment/moment.js"></script>
+<script src="assets/vendor/libs/jdate/jdate.min.js"></script>
+<script src="assets/vendor/libs/flatpickr/flatpickr-jdate.js"></script>
+<script src="assets/vendor/libs/flatpickr/l10n/fa.js"></script>
+<script src="assets/vendor/libs/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+<script src="assets/vendor/libs/bootstrap-daterangepicker/bootstrap-daterangepicker.js"></script>
+<script src="assets/vendor/libs/jquery-timepicker/jquery-timepicker.js"></script>
+<script src="assets/vendor/libs/pickr/pickr.js"></script>
+<script src="assets/js/forms-pickers-jalali.js"></script>
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/tinymce.min.js" referrerpolicy="origin"></script>
+<!-- Page JS -->
+<script src="assets/js/dashboards-analytics.js"></script>
+<!-- Include Quill's JS -->
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+<script>
+// Initialize Quill editor
+var quill = new Quill('#full-editor', {
+    theme: 'snow',
+    modules: {
+        toolbar: [
+            [{ 'header': [1, 2, 3, false] }],
+            ['bold', 'italic', 'underline'],
+            ['link', 'image'],
+            [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+            ['clean']
+        ]
+    },
+    placeholder: 'توضیحات کامل را وارد کنید...'
+});
+
+// Update hidden input with Quill content on form submission
+document.querySelector('form').onsubmit = function() {
+    document.querySelector('#page-description').value = quill.root.innerHTML;
+};
+</script>
+</body>
+</html>

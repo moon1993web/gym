@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="light-style layout-navbar-fixed layout-menu-fixed layout-compact" data-assets-path="assets/" data-template="vertical-menu-template" data-theme="theme-default" dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport"/>
+    <title>مدیریت شمارنده‌ها | Vuexy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+    <link href="assets/vendor/css/rtl/core.css" rel="stylesheet"/>
+    <link href="assets/vendor/css/rtl/theme-default.css" rel="stylesheet"/>
+    <link href="assets/css/demo.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+    <script src="assets/vendor/js/helpers.js"></script>
+    <script src="assets/vendor/js/template-customizer.js"></script>
+    <script src="assets/js/config.js"></script>
+    <style>
+        .icon-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .icon-option i {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        <!-- منوی کناری بدون تغییر -->
+        <aside class="layout-menu menu-vertical menu bg-menu-theme" id="layout-menu">
+            <!-- منوی کناری شما -->
+        </aside>
+
+        <div class="layout-page">
+            <!-- نوار ناوبری بدون تغییر -->
+            <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+                <!-- نوار ناوبری شما -->
+            </nav>
+
+            <!-- محتوا -->
+            <div class="content-wrapper">
+                <div class="container-xxl flex-grow-1 container-p-y">
+                    <h4 class="py-3 mb-4">مدیریت شمارنده‌ها</h4>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <ul class="nav nav-tabs" id="counterTabs" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="list-tab" data-bs-toggle="tab" data-bs-target="#counter-list" type="button" role="tab" aria-controls="counter-list" aria-selected="true">لیست شمارنده‌ها</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="add-tab" data-bs-toggle="tab" data-bs-target="#counter-add" type="button" role="tab" aria-controls="counter-add" aria-selected="false">ایجاد/ویرایش شمارنده</button>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content mt-4" id="counterTabsContent">
+                                        <!-- تب لیست شمارنده‌ها -->
+                                        <div class="tab-pane fade show active" id="counter-list" role="tabpanel" aria-labelledby="list-tab">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>آیکون</th>
+                                                        <th>عنوان</th>
+                                                        <th>مقدار</th>
+                                                        <th>عملیات</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td><i class="bi bi-calendar3"></i></td>
+                                                        <td>روزهای کاری</td>
+                                                        <td>2457</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">عملیات</button>
+                                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                                    <li><button class="dropdown-item" onclick="alert('ویرایش شمارنده 1')">ویرایش</button></li>
+                                                                    <li><button class="dropdown-item text-danger" onclick="alert('حذف شمارنده 1')">حذف</button></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td><i class="bi bi-cup-hot"></i></td>
+                                                        <td>فنجان قهوه</td>
+                                                        <td>1526</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">عملیات</button>
+                                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                                    <li><button class="dropdown-item" onclick="alert('ویرایش شمارنده 2')">ویرایش</button></li>
+                                                                    <li><button class="dropdown-item text-danger" onclick="alert('حذف شمارنده 2')">حذف</button></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td><i class="bi bi-clipboard-check"></i></td>
+                                                        <td>مستندات کاری</td>
+                                                        <td>1147</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">عملیات</button>
+                                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                                    <li><button class="dropdown-item" onclick="alert('ویرایش شمارنده 3')">ویرایش</button></li>
+                                                                    <li><button class="dropdown-item text-danger" onclick="alert('حذف شمارنده 3')">حذف</button></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td><i class="bi bi-emoji-smile"></i></td>
+                                                        <td>اعضای خندان</td>
+                                                        <td>1456</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">عملیات</button>
+                                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                                    <li><button class="dropdown-item" onclick="alert('ویرایش شمارنده 4')">ویرایش</button></li>
+                                                                    <li><button class="dropdown-item text-danger" onclick="alert('حذف شمارنده 4')">حذف</button></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <!-- تب ایجاد/ویرایش شمارنده -->
+                                        <div class="tab-pane fade" id="counter-add" role="tabpanel" aria-labelledby="add-tab">
+                                            <form onsubmit="alert('شمارنده ذخیره شد'); return false;">
+                                                <div class="row g-3">
+                                                    <!-- انتخاب آیکون -->
+                                                    <div class="col-md-12">
+                                                        <label class="form-label" for="counter-icon">انتخاب آیکون</label>
+                                                        <select class="form-select" id="counter-icon" required>
+                                                            <option value="">انتخاب کنید</option>
+                                                            <option value="bi bi-calendar3" data-icon="bi bi-calendar3">
+                                                                <span class="icon-option"><i class="bi bi-calendar3"></i> تقویم (روزهای کاری)</span>
+                                                            </option>
+                                                            <option value="bi bi-cup-hot" data-icon="bi bi-cup-hot">
+                                                                <span class="icon-option"><i class="bi bi-cup-hot"></i> فنجان قهوه</span>
+                                                            </option>
+                                                            <option value="bi bi-clipboard-check" data-icon="bi bi-clipboard-check">
+                                                                <span class="icon-option"><i class="bi bi-clipboard-check"></i> مستندات</span>
+                                                            </option>
+                                                            <option value="bi bi-emoji-smile" data-icon="bi bi-emoji-smile">
+                                                                <span class="icon-option"><i class="bi bi-emoji-smile"></i> چهره خندان</span>
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                    <!-- عنوان شمارنده -->
+                                                    <div class="col-md-12">
+                                                        <label class="form-label" for="counter-title">عنوان شمارنده</label>
+                                                        <input class="form-control" type="text" id="counter-title" placeholder="عنوان شمارنده" required />
+                                                    </div>
+                                                    <!-- مقدار شمارنده -->
+                                                    <div class="col-md-12">
+                                                        <label class="form-label" for="counter-value">مقدار</label>
+                                                        <input class="form-control" type="number" id="counter-value" placeholder="مقدار" required />
+                                                    </div>
+                                                    <!-- دکمه‌ها -->
+                                                    <div class="col-12 d-flex justify-content-between">
+                                                        <button type="reset" class="btn btn-label-secondary">انصراف</button>
+                                                        <button type="submit" class="btn btn-primary">ذخیره</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- اسکریپت‌ها -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // نمایش آیکون‌ها در گزینه‌های انتخابی
+        document.addEventListener("DOMContentLoaded", function () {
+            const select = document.getElementById("counter-icon");
+            Array.from(select.options).forEach(option => {
+                if (option.value) {
+                    const iconClass = option.getAttribute("data-icon");
+                    option.innerHTML = `<span class="icon-option"><i class="${iconClass}"></i> ${option.text}</span>`;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

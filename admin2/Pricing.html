@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="light-style layout-navbar-fixed layout-menu-fixed layout-compact" data-assets-path="assets/" data-template="vertical-menu-template" data-theme="theme-default" dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport"/>
+    <title>مدیریت قیمت‌گذاری | Vuexy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+    <link href="assets/vendor/css/rtl/core.css" rel="stylesheet"/>
+    <link href="assets/vendor/css/rtl/theme-default.css" rel="stylesheet"/>
+    <link href="assets/css/demo.css" rel="stylesheet"/>
+    <script src="assets/vendor/js/helpers.js"></script>
+    <script src="assets/vendor/js/template-customizer.js"></script>
+    <script src="assets/js/config.js"></script>
+</head>
+
+<body>
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        <!-- منوی کناری بدون تغییر -->
+        <aside class="layout-menu menu-vertical menu bg-menu-theme" id="layout-menu">
+            <!-- منوی کناری شما -->
+        </aside>
+
+        <div class="layout-page">
+            <!-- نوار ناوبری بدون تغییر -->
+            <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+                <!-- نوار ناوبری شما -->
+            </nav>
+
+            <!-- محتوا -->
+            <div class="content-wrapper">
+                <div class="container-xxl flex-grow-1 container-p-y">
+                    <h4 class="py-3 mb-4">مدیریت قیمت‌گذاری</h4>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <ul class="nav nav-tabs" id="pricingTabs" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="list-tab" data-bs-toggle="tab" data-bs-target="#pricing-list" type="button" role="tab" aria-controls="pricing-list" aria-selected="true">لیست قیمت‌گذاری</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="add-tab" data-bs-toggle="tab" data-bs-target="#pricing-add" type="button" role="tab" aria-controls="pricing-add" aria-selected="false">ایجاد/ویرایش قیمت‌گذاری</button>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content mt-4" id="pricingTabsContent">
+                                        <!-- تب لیست قیمت‌گذاری -->
+                                        <div class="tab-pane fade show active" id="pricing-list" role="tabpanel" aria-labelledby="list-tab">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>عنوان</th>
+                                                        <th>توضیحات کوتاه</th>
+                                                        <th>قیمت (دلار)</th>
+                                                        <th>عملیات</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>اشتراک VIP</td>
+                                                        <td>دسترسی به امکانات پیشرفته، فضای نامحدود، مشاوره آنلاین، پشتیبانی 7/50 ساعته</td>
+                                                        <td>39</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">عملیات</button>
+                                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                                    <li><button class="dropdown-item" onclick="alert('ویرایش قیمت‌گذاری 1')">ویرایش</button></li>
+                                                                    <li><button class="dropdown-item text-danger" onclick="alert('حذف قیمت‌گذاری 1')">حذف</button></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>اشتراک پایه</td>
+                                                        <td>دسترسی به امکانات پایه، فضای محدود، پشتیبانی ساعتی</td>
+                                                        <td>39</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">عملیات</button>
+                                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                                    <li><button class="dropdown-item" onclick="alert('ویرایش قیمت‌گذاری 2')">ویرایش</button></li>
+                                                                    <li><button class="dropdown-item text-danger" onclick="alert('حذف قیمت‌گذاری 2')">حذف</button></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>اشتراک عالی</td>
+                                                        <td>دسترسی به امکانات پیشرفته، فضای نامحدود، پشتیبانی 7/15 ساعته</td>
+                                                        <td>39</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">عملیات</button>
+                                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                                    <li><button class="dropdown-item" onclick="alert('ویرایش قیمت‌گذاری 3')">ویرایش</button></li>
+                                                                    <li><button class="dropdown-item text-danger" onclick="alert('حذف قیمت‌گذاری 3')">حذف</button></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <!-- تب ایجاد/ویرایش قیمت‌گذاری -->
+                                        <div class="tab-pane fade" id="pricing-add" role="tabpanel" aria-labelledby="add-tab">
+                                            <form onsubmit="alert('قیمت‌گذاری ذخیره شد'); return false;">
+                                                <div class="row g-3">
+                                                    <!-- عنوان -->
+                                                    <div class="col-md-12">
+                                                        <label class="form-label" for="pricing-title">عنوان</label>
+                                                        <input class="form-control" type="text" id="pricing-title" placeholder="عنوان" required />
+                                                    </div>
+                                                    <!-- توضیحات کوتاه -->
+                                                    <div class="col-md-12">
+                                                        <label class="form-label" for="pricing-description">توضیحات کوتاه</label>
+                                                        <textarea class="form-control" id="pricing-description" placeholder="توضیحات کوتاه" rows="3" required></textarea>
+                                                    </div>
+                                                    <!-- قیمت -->
+                                                    <div class="col-md-12">
+                                                        <label class="form-label" for="pricing-value">قیمت (دلار)</label>
+                                                        <input class="form-control" type="number" id="pricing-value" placeholder="قیمت" required />
+                                                    </div>
+                                                    <!-- دکمه‌ها -->
+                                                    <div class="col-12 d-flex justify-content-between">
+                                                        <button type="reset" class="btn btn-label-secondary">انصراف</button>
+                                                        <button type="submit" class="btn btn-primary">ذخیره</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- اسکریپت‌ها -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

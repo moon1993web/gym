@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html class="light-style layout-navbar-fixed layout-menu-fixed layout-compact" data-assets-path="assets/" data-template="vertical-menu-template" data-theme="theme-default" dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport"/>
+    <title>پاسخ به نظر - مدیریت | Vuexy - قالب مدیریت بوت استرپ</title>
+    <meta content="" name="description"/>
+    <!-- Favicon -->
+    <link href="assets/img/favicon/favicon.ico" rel="icon" type="image/x-icon"/>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="assets/vendor/fonts/fontawesome.css" rel="stylesheet"/>
+    <link href="assets/vendor/fonts/tabler-icons.css" rel="stylesheet"/>
+    <link href="assets/vendor/fonts/flag-icons.css" rel="stylesheet"/>
+    <!-- Core CSS -->
+    <link class="template-customizer-core-css" href="assets/vendor/css/rtl/core.css" rel="stylesheet"/>
+    <link class="template-customizer-theme-css" href="assets/vendor/css/rtl/theme-default.css" rel="stylesheet"/>
+    <link href="assets/css/demo.css" rel="stylesheet"/>
+    <link href="assets/css/custom-styles.css" rel="stylesheet"/>
+    <!-- Vendors CSS -->
+    <link href="assets/vendor/libs/node-waves/node-waves.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/typeahead-js/typeahead.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/apex-charts/apex-charts.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/swiper/swiper.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css" rel="stylesheet"/>
+    <!-- Page CSS -->
+    <link href="assets/vendor/css/pages/cards-advance.css" rel="stylesheet"/>
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+    <script src="assets/vendor/js/template-customizer.js"></script>
+    <script src="assets/js/config.js"></script>
+    <!-- Better experience of RTL -->
+    <link href="assets/css/rtl.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Layout wrapper -->
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        <!-- Menu -->
+        <aside class="layout-menu menu-vertical menu bg-menu-theme" id="layout-menu">
+            <div class="app-brand demo">
+                <a class="app-brand-link" href="index.html">
+                    <span class="app-brand-logo demo">
+                        <svg fill="none" height="22" viewBox="0 0 32 22" width="32" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="#7367F0" fill-rule="evenodd"/>
+                            <path clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" fill-rule="evenodd" opacity="0.06"/>
+                            <path clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" fill-rule="evenodd" opacity="0.06"/>
+                            <path clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="#7367F0" fill-rule="evenodd"/>
+                        </svg>
+                    </span>
+                    <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+                </a>
+                <a class="layout-menu-toggle menu-link text-large ms-auto" href="javascript:void(0);">
+                    <i class="ti menu-toggle-icon d-none d-xl-block ti-sm align-middle"></i>
+                    <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
+                </a>
+            </div>
+            <div class="menu-inner-shadow"></div>
+            <ul class="menu-inner py-1">
+                <!-- Dashboard -->
+                <li class="menu-item">
+                    <a class="menu-link" href="index.html">
+                        <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                        <div data-i18n="Dashboard">داشبورد</div>
+                    </a>
+                </li>
+                <!-- Messenger -->
+                <li class="menu-item">
+                    <a class="menu-link" href="Messengers/List.html">
+                        <i class="menu-icon tf-icons ti ti-messages"></i>
+                        <div data-i18n="Messenger">پیامرسان</div>
+                    </a>
+                </li>
+                <!-- Page Management -->
+                <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons ti ti-pencil"></i>
+                        <div data-i18n="Pages Management">مدیریت صفحات</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="Pages/Create.html" class="menu-link">
+                                <div data-i18n="Create Page">ایجاد صفحه</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="Pages/List.html" class="menu-link">
+                                <div data-i18n="List Pages">لیست صفحات</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Categories -->
+                <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons ti ti-list"></i>
+                        <div data-i18n="Categories">دسته‌بندی</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="PostCategory/Create.html" class="menu-link">
+                                <div data-i18n="Create Category">ایجاد دسته‌بندی</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="PostCategory/List.html" class="menu-link">
+                                <div data-i18n="List Categories">لیست دسته‌بندی‌ها</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Blog -->
+                <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons ti ti-pencil"></i>
+                        <div data-i18n="Blog">وبلاگ</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="Posts/Create.html" class="menu-link">
+                                <div data-i18n="Create Blog">ایجاد وبلاگ</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="Posts/List.html" class="menu-link">
+                                <div data-i18n="List Blogs">لیست وبلاگ‌ها</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons ti ti-settings"></i>
+                        <div data-i18n="Services">خدمات</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="Services/Create.html" class="menu-link">
+                                <div data-i18n="Create Service">ایجاد خدمت</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="Services/List.html" class="menu-link">
+                                <div data-i18n="List Services">لیست خدمات</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Logo -->
+                <li class="menu-item">
+                    <a class="menu-link" href="Logo/Create.html">
+                        <i class="menu-icon tf-icons ti ti-picture-in-picture"></i>
+                        <div data-i18n="Logo">لوگو</div>
+                    </a>
+                </li>
+                <!-- Comments -->
+                <li class="menu-item active">
+                    <a class="menu-link" href="Comments/List.html">
+                        <i class="menu-icon tf-icons ti ti-message"></i>
+                        <div data-i18n="Comments">نظرات</div>
+                    </a>
+                </li>
+                <!-- Menu -->
+                <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons ti ti-layout-navbar"></i>
+                        <div data-i18n="Menu">منو</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="Menu/Create.html" class="menu-link">
+                                <div data-i18n="Create Menu">ایجاد منو</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="Menu/List.html" class="menu-link">
+                                <div data-i18n="List Menus">لیست منوها</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- ADS -->
+                <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons ti ti-layout-navbar"></i>
+                        <div data-i18n="Menu">تبلیغات</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="Ads/Create.html" class="menu-link">
+                                <div data-i18n="Create Ad">درج تبلیغات</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="Ads/List.html" class="menu-link">
+                                <div data-i18n="List Ads">لیست تبلیغات</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Appointments -->
+                <li class="menu-item">
+                    <a class="menu-link" href="Appointments/List.html">
+                        <i class="menu-icon tf-icons ti ti-calendar"></i>
+                        <div data-i18n="Appointments">نوبت دهی</div>
+                    </a>
+                </li>
+                <!-- Social Networks -->
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                        <i class="menu-icon tf-icons ti ti-world"></i>
+                        <div data-i18n="Social Networks">شبکه های اجتماعی</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="SocialMedia/Create.html">
+                                <div data-i18n="Create Social Network">ایجاد شبکه اجتماعی</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="SocialMedia/List.html">
+                                <div data-i18n="List Social Networks">لیست شبکه های اجتماعی</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- FAQ -->
+                <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons ti ti-help"></i>
+                        <div data-i18n="FAQ">سوالات متداول</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="FAQ/Create.html" class="menu-link">
+                                <div data-i18n="Create FAQ">ایجاد سوالات متداول</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="FAQ/List.html" class="menu-link">
+                                <div data-i18n="List FAQs">لیست سوالات متداول</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Contact Us -->
+                <li class="menu-item">
+                    <a class="menu-link" href="Contact/List.html">
+                        <i class="menu-icon tf-icons ti ti-phone"></i>
+                        <div data-i18n="Contact Us">تماس با ما</div>
+                    </a>
+                </li>
+                <!-- About Us -->
+                <li class="menu-item">
+                    <a class="menu-link" href="About/Create.html">
+                        <i class="menu-icon tf-icons ti ti-user"></i>
+                        <div data-i18n="About Us">درباره ما</div>
+                    </a>
+                </li>
+                <!-- Gallery -->
+                <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons ti ti-photo"></i>
+                        <div data-i18n="Gallery">گالری</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="Gallery/Create.html" class="menu-link">
+                                <div data-i18n="Create Gallery">ایجاد گالری</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="Gallery/List.html" class="menu-link">
+                                <div data-i18n="List Galleries">لیست گالری‌ها</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Icons -->
+                <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons ti ti-brand-tabler"></i>
+                        <div data-i18n="Icons">آیکون‌ها</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="Icon/Create.html" class="menu-link">
+                                <div data-i18n="Insert Icon">درج آیکون</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Logout -->
+                <li class="menu-item">
+                    <a class="menu-link" href="auth-logout.html">
+                        <i class="menu-icon tf-icons ti ti-logout"></i>
+                        <div data-i18n="Logout">خروج</div>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- / Menu -->
+        <!-- Layout container -->
+        <div class="layout-page">
+            <!-- Navbar -->
+            <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+                <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                    <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                        <i class="ti ti-menu-2 ti-sm"></i>
+                    </a>
+                </div>
+                <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                    <!-- Search -->
+                    <div class="navbar-nav align-items-center">
+                        <div class="nav-item navbar-search-wrapper mb-0">
+                            <a class="nav-item nav-link search-toggler d-flex align-items-center px-0" href="javascript:void(0);">
+                                <i class="ti ti-search ti-md me-2 h-mirror"></i>
+                                <span class="d-none d-md-inline-block text-muted">جستجو (/+Ctrl)</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /Search -->
+                    <ul class="navbar-nav flex-row align-items-center ms-auto">
+                        <!-- Language -->
+                        <li class="nav-item dropdown-language dropdown me-2 me-xl-0">
+                            <a class="nav-link dropdown-toggle hide-arrow" data-bs-toggle="dropdown" href="javascript:void(0);">
+                                <i class="ti ti-language rounded-circle ti-md"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" data-language="fa" data-text-direction="rtl" href="javascript:void(0);">
+                                        <span class="align-middle">فارسی</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" data-language="en" data-text-direction="ltr" href="javascript:void(0);">
+                                        <span class="align-middle">انگلیسی</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--/ Language -->
+                        <!-- Style Switcher -->
+                        <li class="nav-item dropdown-style-switcher dropdown me-2 me-xl-0">
+                            <a class="nav-link dropdown-toggle hide-arrow" data-bs-toggle="dropdown" href="javascript:void(0);">
+                                <i class="ti ti-md"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-styles">
+                                <li>
+                                    <a class="dropdown-item" data-theme="light" href="javascript:void(0);">
+                                        <span class="align-middle"><i class="ti ti-sun me-2"></i>روز</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" data-theme="dark" href="javascript:void(0);">
+                                        <span class="align-middle"><i class="ti ti-moon me-2"></i>شب</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- / Style Switcher-->
+                        <!-- View Website Icon -->
+                        <li class="nav-item me-2 me-xl-0">
+                            <a class="nav-link" href="https://yourwebsite.com" target="_blank">
+                                <i class="ti ti-external-link ti-md"></i>
+                                <span class="d-none d-md-inline-block">مشاهده سایت</span>
+                            </a>
+                        </li>
+                        <!-- / View Website Icon -->
+                    </ul>
+                </div>
+                <!-- Search Small Screens -->
+                <div class="navbar-search-wrapper search-input-wrapper d-none">
+                    <input aria-label="جستجو..." class="form-control search-input container-xxl border-0" placeholder="جستجو..." type="text"/>
+                    <i class="ti ti-x ti-sm search-toggler cursor-pointer"></i>
+                </div>
+            </nav>
+            <!-- / Navbar -->
+            <!-- Content wrapper -->
+            <div class="content-wrapper">
+                <!-- Content -->
+                <div class="container-xxl flex-grow-1 container-p-y">
+                    <h4 class="py-3 mb-4">
+                        <span class="text-muted fw-light">نظرات /</span>
+                        پاسخ به نظر
+                    </h4>
+                    <div class="app-comment-reply">
+                        <!-- Reply Comment Form -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">پاسخ به نظر</h5>
+                                <div class="mb-4">
+                                    <h6>اطلاعات نظر اصلی</h6>
+                                    <div class="mb-3">
+                                        <label class="form-label">نام کاربر</label>
+                                        <input type="text" class="form-control" value="رضا حسینی" disabled/>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">متن نظر</label>
+                                        <textarea class="form-control" rows="3" disabled>محصولات شما عالی هستند!</textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">تاریخ ثبت</label>
+                                        <input type="text" class="form-control" value="1403/01/25" disabled/>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">وضعیت</label>
+                                        <input type="text" class="form-control" value="تأیید شده" disabled/>
+                                    </div>
+                                </div>
+                                <form action="#">
+                                    <div class="mb-3">
+                                        <label for="replyText" class="form-label">متن پاسخ</label>
+                                        <textarea class="form-control" id="replyText" rows="5" placeholder="پاسخ خود را وارد کنید" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">ارسال پاسخ</button>
+                                    <a href="Comments/List.html" class="btn btn-secondary">بازگشت</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Content -->
+                <!-- Footer -->
+                <footer class="content-footer footer bg-footer-theme">
+                    <div class="container-xxl">
+                        <div class="footer-container d-flex align-items-center justify-content-between py-2 flex-md-row flex-column">
+                            <div>
+                                ارائه شده توسط
+                                <span class="text-danger byte-hover">تیم پویا وب</span>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- / Footer -->
+                <div class="content-backdrop fade"></div>
+            </div>
+            <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+    </div>
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+</div>
+<!-- / Layout wrapper -->
+<!-- Core JS -->
+<script src="assets/vendor/libs/jquery/jquery.js"></script>
+<script src="assets/vendor/libs/popper/popper.js"></script>
+<script src="assets/vendor/js/bootstrap.js"></script>
+<script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+<script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+<script src="assets/vendor/libs/hammer/hammer.js"></script>
+<script src="assets/vendor/libs/i18n/fa.js"></script>
+<script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+<script src="assets/vendor/js/menu.js"></script>
+<!-- Vendors JS -->
+<script src="assets/vendor/libs/apex-charts/apexcharts.js"></script>
+<script src="assets/vendor/libs/swiper/swiper.js"></script>
+<script src="assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+<script src="assets/vendor/libs/datatables-bs5/i18n/fa.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jalaali-js/dist/jalaali.min.js"></script>
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>

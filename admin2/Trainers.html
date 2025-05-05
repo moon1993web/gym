@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html class="light-style layout-navbar-fixed layout-menu-fixed layout-compact" data-assets-path="assets/" data-template="vertical-menu-template" data-theme="theme-default" dir="rtl" lang="fa">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport"/>
+    <title>مدیریت مربیان | Vuexy - قالب مدیریت بوت استرپ</title>
+    <meta content="صفحه مدیریت مربیان" name="description"/>
+    <!-- Favicon -->
+    <link href="assets/img/favicon/favicon.ico" rel="icon" type="image/x-icon"/>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+    <!-- Icons -->
+    <link href="assets/vendor/fonts/fontawesome.css" rel="stylesheet"/>
+    <link href="assets/vendor/fonts/tabler-icons.css" rel="stylesheet"/>
+    <link href="assets/vendor/fonts/flag-icons.css" rel="stylesheet"/>
+    <!-- Core CSS -->
+    <link class="template-customizer-core-css" href="assets/vendor/css/rtl/core.css" rel="stylesheet"/>
+    <link class="template-customizer-theme-css" href="assets/vendor/css/rtl/theme-default.css" rel="stylesheet"/>
+    <link href="assets/css/demo.css" rel="stylesheet"/>
+    <!-- Vendors CSS -->
+    <link href="assets/vendor/libs/node-waves/node-waves.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/typeahead-js/typeahead.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/select2/select2.css" rel="stylesheet"/>
+    <link href="assets/vendor/libs/@form-validation/form-validation.css" rel="stylesheet"/>
+    <!-- Page CSS -->
+    <link href="assets/css/rtl.css" rel="stylesheet"/>
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+    <script src="assets/vendor/js/template-customizer.js"></script>
+    <script src="assets/js/config.js"></script>
+</head>
+
+<body>
+<!-- Layout wrapper -->
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        <!-- Menu -->
+        <aside class="layout-menu menu-vertical menu bg-menu-theme" id="layout-menu">
+            <!-- منوی اصلی مشابه نمونه -->
+            <div class="app-brand demo">
+                <a class="app-brand-link" href="index.html">
+                    <span class="app-brand-logo demo">
+                        <svg fill="none" height="22" viewBox="0 0 32 22" width="32" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="#7367F0" fill-rule="evenodd"/>
+                            <path clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" fill-rule="evenodd" opacity="0.06"/>
+                            <path clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" fill-rule="evenodd" opacity="0.06"/>
+                            <path clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="#7367F0" fill-rule="evenodd"/>
+                        </svg>
+                    </span>
+                    <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+                </a>
+                <a class="layout-menu-toggle menu-link text-large ms-auto" href="javascript:void(0);">
+                    <i class="ti menu-toggle-icon d-none d-xl-block ti-sm align-middle"></i>
+                    <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
+                </a>
+            </div>
+            <div class="menu-inner-shadow"></div>
+            <ul class="menu-inner py-1">
+                <!-- فقط یک نمونه آیتم برای کوتاه شدن -->
+                <li class="menu-item">
+                    <a class="menu-link" href="index.html">
+                        <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                        <div data-i18n="Dashboards">داشبورد</div>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- / Menu -->
+        <!-- Layout container -->
+        <div class="layout-page">
+            <!-- Navbar -->
+            <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+                <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                    <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                        <i class="ti ti-menu-2 ti-sm"></i>
+                    </a>
+                </div>
+                <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                    <!-- Search -->
+                    <div class="navbar-nav align-items-center">
+                        <div class="nav-item navbar-search-wrapper mb-0">
+                            <a class="nav-item nav-link search-toggler d-flex align-items-center px-0" href="javascript:void(0);">
+                                <i class="ti ti-search ti-md me-2 h-mirror"></i>
+                                <span class="d-none d-md-inline-block text-muted">جستجو (/+Ctrl)</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /Search -->
+                    <ul class="navbar-nav flex-row align-items-center ms-auto">
+                        <!-- User -->
+                        <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                            <a class="nav-link dropdown-toggle hide-arrow" data-bs-toggle="dropdown" href="javascript:void(0);">
+                                <div class="avatar avatar-online">
+                                    <img alt class="h-auto rounded-circle" src="assets/img/avatars/1.png"/>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0 me-3">
+                                                <div class="avatar avatar-online">
+                                                    <img alt class="h-auto rounded-circle" src="assets/img/avatars/1.png"/>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <span class="fw-semibold d-block mb-1">نوید محمدزاده</span>
+                                                <small class="text-muted">مدیرکل</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="dropdown-divider"></div>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="ti ti-logout me-2 ti-sm"></i>
+                                        <span class="align-middle">خروج</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--/ User -->
+                    </ul>
+                </div>
+            </nav>
+            <!-- / Navbar -->
+            <!-- Content wrapper -->
+            <div class="content-wrapper">
+                <!-- Content -->
+                <div class="container-xxl flex-grow-1 container-p-y">
+                    <h4 class="py-3 mb-4">مدیریت مربیان</h4>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <!-- تب‌ها -->
+                                    <ul class="nav nav-tabs" id="coachTabs" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="list-tab" data-bs-toggle="tab" data-bs-target="#coach-list" type="button" role="tab" aria-controls="coach-list" aria-selected="true">لیست مربیان</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="add-tab" data-bs-toggle="tab" data-bs-target="#coach-add" type="button" role="tab" aria-controls="coach-add" aria-selected="false">افزودن مربی جدید</button>
+                                        </li>
+                                    </ul>
+
+                                    <!-- محتوای تب‌ها -->
+                                    <div class="tab-content mt-4" id="coachTabsContent">
+                                        <!-- تب لیست مربیان -->
+                                        <div class="tab-pane fade show active" id="coach-list" role="tabpanel" aria-labelledby="list-tab">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>عکس</th>
+                                                        <th>نام و نام خانوادگی</th>
+                                                        <th>درجه تحصیلات</th>
+                                                        <th>شماره تلفن</th>
+                                                        <th>ایمیل</th>
+                                                        <th>عملیات</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- نمونه داده -->
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td><img src="assets/img/avatars/1.png" alt="مربی" class="rounded-circle" width="40" height="40"/></td>
+                                                        <td>علی حسینی</td>
+                                                        <td>کارشناسی ارشد</td>
+                                                        <td>09123456789</td>
+                                                        <td>ali.hosseini@example.com</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    عملیات
+                                                                </button>
+                                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                                    <li>
+                                                                        <button class="dropdown-item" onclick="loadEditTab(1)">ویرایش</button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button class="dropdown-item text-danger">حذف</button>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td><img src="assets/img/avatars/2.png" alt="مربی" class="rounded-circle" width="40" height="40"/></td>
+                                                        <td>مریم احمدی</td>
+                                                        <td>دکتری</td>
+                                                        <td>09129876543</td>
+                                                        <td>maryam.ahmadi@example.com</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    عملیات
+                                                                </button>
+                                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                                    <li>
+                                                                        <button class="dropdown-item" onclick="loadEditTab(2)">ویرایش</button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button class="dropdown-item text-danger">حذف</button>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <!-- تب افزودن/ویرایش مربی جدید -->
+                                        <div class="tab-pane fade" id="coach-add" role="tabpanel" aria-labelledby="add-tab">
+                                            <form id="coach-form" onsubmit="return false">
+                                                <div class="row g-3">
+                                                    <!-- عکس -->
+                                                    <div class="col-md-12">
+                                                        <label class="form-label" for="coach-image">عکس</label>
+                                                        <input class="form-control" type="file" id="coach-image" accept="image/*" onchange="previewImage(event)"/>
+                                                        <div class="mt-2">
+                                                            <img id="image-preview" src="#" alt="پیش‌نمایش" style="display: none; max-width: 200px; max-height: 200px;" class="rounded"/>
+                                                        </div>
+                                                    </div>
+                                                    <!-- نام و نام خانوادگی -->
+                                                    <div class="col-md-6">
+                                                        <label class="form-label" for="coach-fullname">نام و نام خانوادگی</label>
+                                                        <input class="form-control" type="text" id="coach-fullname" placeholder="نام و نام خانوادگی" required/>
+                                                    </div>
+                                                    <!-- درجه تحصیلات -->
+                                                    <div class="col-md-6">
+                                                        <label class="form-label" for="coach-education">درجه تحصیلات</label>
+                                                        <select class="form-select" id="coach-education" required>
+                                                            <option value="">انتخاب کنید</option>
+                                                            <option value="diploma">دیپلم</option>
+                                                            <option value="bachelor">کارشناسی</option>
+                                                            <option value="master">کارشناسی ارشد</option>
+                                                            <option value="phd">دکتری</option>
+                                                        </select>
+                                                    </div>
+                                                    <!-- توضیحات کوتاه -->
+                                                    <div class="col-md-12">
+                                                        <label class="form-label" for="coach-short-desc">توضیحات کوتاه</label>
+                                                        <textarea class="form-control" id="coach-short-desc" rows="3" placeholder="توضیحات کوتاه درباره مربی" required></textarea>
+                                                    </div>
+                                                    <!-- شبکه‌های اجتماعی -->
+                                                    <div class="col-md-6">
+                                                        <label class="form-label" for="coach-social-linkedin">لینکدین</label>
+                                                        <input class="form-control" type="url" id="coach-social-linkedin" placeholder="لینک پروفایل لینکدین"/>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label" for="coach-social-instagram">اینستاگرام</label>
+                                                        <input class="form-control" type="url" id="coach-social-instagram" placeholder="لینک پروفایل اینستاگرام"/>
+                                                    </div>
+                                                    <!-- بیوگرافی -->
+                                                    <div class="col-md-12">
+                                                        <label class="form-label" for="coach-bio">بیوگرافی</label>
+                                                        <textarea class="form-control" id="coach-bio" rows="5" placeholder="بیوگرافی کامل مربی"></textarea>
+                                                    </div>
+                                                    <!-- شماره تلفن -->
+                                                    <div class="col-md-6">
+                                                        <label class="form-label" for="coach-phone">شماره تلفن</label>
+                                                        <input class="form-control" type="tel" id="coach-phone" placeholder="09123456789" pattern="[0-9]{11}" required/>
+                                                    </div>
+                                                    <!-- ایمیل -->
+                                                    <div class="col-md-6">
+                                                        <label class="form-label" for="coach-email">ایمیل</label>
+                                                        <input class="form-control  text-end" type="email" id="coach-email" placeholder="example@domain.com" required/>
+                                                    </div>
+                                                    <!-- حوزه‌های تخصصی -->
+                                                    <div class="col-md-12">
+                                                        <label class="form-label" for="coach-specialties">حوزه‌های تخصصی</label>
+                                                        <input class="form-control" type="text" id="coach-specialties" placeholder="مثال: برنامه‌نویسی، طراحی UI/UX"/>
+                                                    </div>
+                                                    <!-- دکمه‌ها -->
+                                                    <div class="col-12 d-flex justify-content-between">
+                                                        <button type="button" class="btn btn-label-secondary" onclick="resetForm()">انصراف</button>
+                                                        <button type="submit" class="btn btn-primary" id="submit-btn">ذخیره</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Content -->
+                <!-- Footer -->
+                <footer class="content-footer footer bg-footer-theme">
+                    <div class="container-xxl">
+                        <div class="footer-container d-flex align-items-center justify-content-between py-3 flex-md-row flex-column">
+                            <div class="mb-2 mb-md-0">
+                                © <script>document.write(new Date().getFullYear());</script>، ساخته شده با ❤️ توسط <a href="#" target="_blank" class="footer-link fw-medium">Pixinvent</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- / Footer -->
+            </div>
+            <!-- / Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+    </div>
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+</div>
+<!-- / Layout wrapper -->
+
+<!-- Core JS -->
+<script src="assets/vendor/libs/jquery/jquery.js"></script>
+<script src="assets/vendor/libs/popper/popper.js"></script>
+<script src="assets/vendor/js/bootstrap.js"></script>
+<script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+<script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+<script src="assets/vendor/libs/hammer/hammer.js"></script>
+<script src="assets/vendor/libs/i18n/i18n.js"></script>
+<script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+<script src="assets/vendor/js/menu.js"></script>
+
+<!-- Vendors JS -->
+<script src="assets/vendor/libs/select2/select2.js"></script>
+<script src="assets/vendor/libs/@form-validation/popular.js"></script>
+<script src="assets/vendor/libs/@form-validation/bootstrap5.js"></script>
+<script src="assets/vendor/libs/@form-validation/auto-focus.js"></script>
+
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>
+
+<!-- Page JS -->
+<script>
+    // پیش‌نمایش تصویر
+    function previewImage(event) {
+        const reader = new FileReader();
+        reader.onload = function () {
+            const output = document.getElementById('image-preview');
+            output.src = reader.result;
+            output.style.display = 'block';
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    }
+
+    // ریست فرم
+    function resetForm() {
+        document.getElementById('coach-form').reset();
+        document.getElementById('image-preview').style.display = 'none';
+        document.getElementById('submit-btn').textContent = 'ذخیره';
+    }
+
+    // بارگذاری اطلاعات برای ویرایش
+    function loadEditTab(id) {
+        // شبیه‌سازی داده‌ها برای ویرایش
+        const coaches = {
+            1: {
+                image: 'assets/img/avatars/1.png',
+                fullname: 'علی حسینی',
+                education: 'master',
+                shortDesc: 'مربی حرفه‌ای برنامه‌نویسی',
+                linkedin: 'https://linkedin.com/in/alihosseini',
+                instagram: 'https://instagram.com/alihosseini',
+                bio: 'علی حسینی با بیش از 10 سال تجربه در زمینه برنامه‌نویسی...',
+                phone: '09123456789',
+                email: 'ali.hosseini@example.com',
+                specialties: 'برنامه‌نویسی پایتون، توسعه وب'
+            },
+            2: {
+                image: 'assets/img/avatars/2.png',
+                fullname: 'مریم احمدی',
+                education: 'phd',
+                shortDesc: 'متخصص طراحی UI/UX',
+                linkedin: 'https://linkedin.com/in/maryamahmadi',
+                instagram: 'https://instagram.com/maryamahmadi',
+                bio: 'مریم احمدی با مدرک دکتری در طراحی...',
+                phone: '09129876543',
+                email: 'maryam.ahmadi@example.com',
+                specialties: 'طراحی UI/UX، گرافیک'
+            }
+        };
+
+        if (coaches[id]) {
+            const coach = coaches[id];
+            document.getElementById('coach-fullname').value = coach.fullname;
+            document.getElementById('coach-education').value = coach.education;
+            document.getElementById('coach-short-desc').value = coach.shortDesc;
+            document.getElementById('coach-social-linkedin').value = coach.linkedin;
+            document.getElementById('coach-social-instagram').value = coach.instagram;
+            document.getElementById('coach-bio').value = coach.bio;
+            document.getElementById('coach-phone').value = coach.phone;
+            document.getElementById('coach-email').value = coach.email;
+            document.getElementById('coach-specialties').value = coach.specialties;
+            document.getElementById('image-preview').src = coach.image;
+            document.getElementById('image-preview').style.display = 'block';
+            document.getElementById('submit-btn').textContent = 'ویرایش';
+            // تغییر به تب افزودن/ویرایش
+            const addTab = new bootstrap.Tab(document.getElementById('add-tab'));
+            addTab.show();
+        }
+    }
+</script>
+</body>
+</html>

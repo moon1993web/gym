@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="light-style layout-navbar-fixed layout-menu-fixed layout-compact" data-assets-path="assets/" data-template="vertical-menu-template" data-theme="theme-default" dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport"/>
+    <title>مدیریت کلاس‌ها | Vuexy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+    <link href="assets/vendor/css/rtl/core.css" rel="stylesheet"/>
+    <link href="assets/vendor/css/rtl/theme-default.css" rel="stylesheet"/>
+    <link href="assets/css/demo.css" rel="stylesheet"/>
+    <script src="assets/vendor/js/helpers.js"></script>
+    <script src="assets/vendor/js/template-customizer.js"></script>
+    <script src="assets/js/config.js"></script>
+</head>
+
+<body>
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        <!-- منوی کناری بدون تغییر -->
+        <aside class="layout-menu menu-vertical menu bg-menu-theme" id="layout-menu">
+            <!-- منوی کناری شما -->
+        </aside>
+
+        <div class="layout-page">
+            <!-- نوار ناوبری بدون تغییر -->
+            <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+                <!-- نوار ناوبری شما -->
+            </nav>
+
+            <!-- محتوا -->
+            <div class="content-wrapper">
+                <div class="container-xxl flex-grow-1 container-p-y">
+                    <h4 class="py-3 mb-4">مدیریت کلاس‌ها</h4>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <ul class="nav nav-tabs" id="classTabs" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="list-tab" data-bs-toggle="tab" data-bs-target="#class-list" type="button" role="tab" aria-controls="class-list" aria-selected="true">لیست کلاس‌ها</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="add-tab" data-bs-toggle="tab" data-bs-target="#class-add" type="button" role="tab" aria-controls="class-add" aria-selected="false">افزودن کلاس جدید</button>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content mt-4" id="classTabsContent">
+                                        <!-- تب لیست کلاس‌ها -->
+                                        <div class="tab-pane fade show active" id="class-list" role="tabpanel" aria-labelledby="list-tab">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>عنوان کلاس</th>
+                                                        <th>دسته‌بندی</th>
+                                                        <th>مربی</th>
+                                                        <th>روز کلاس</th>
+                                                        <th>زمان کلاس</th>
+                                                        <th>عملیات</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>آموزش پایتون مقدماتی</td>
+                                                        <td>برنامه‌نویسی</td>
+                                                        <td>علی حسینی</td>
+                                                        <td>شنبه، دوشنبه</td>
+                                                        <td>10:00-12:00</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">عملیات</button>
+                                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                                    <li><button class="dropdown-item" onclick="alert('ویرایش کلاس 1')">ویرایش</button></li>
+                                                                    <li><button class="dropdown-item text-danger" onclick="alert('حذف کلاس 1')">حذف</button></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>طراحی UI/UX</td>
+                                                        <td>طراحی</td>
+                                                        <td>مریم احمدی</td>
+                                                        <td>دوشنبه، چهارشنبه</td>
+                                                        <td>14:00-16:00</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">عملیات</button>
+                                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                                    <li><button class="dropdown-item" onclick="alert('ویرایش کلاس 2')">ویرایش</button></li>
+                                                                    <li><button class="dropdown-item text-danger" onclick="alert('حذف کلاس 2')">حذف</button></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>مدیریت پروژه</td>
+                                                        <td>مدیریت</td>
+                                                        <td>رضا کریمی</td>
+                                                        <td>چهارشنبه</td>
+                                                        <td>کنسل شده</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">عملیات</button>
+                                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                                    <li><button class="dropdown-item" onclick="alert('ویرایش کلاس 3')">ویرایش</button></li>
+                                                                    <li><button class="dropdown-item text-danger" onclick="alert('حذف کلاس 3')">حذف</button></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <!-- تب افزودن کلاس جدید -->
+                                        <div class="tab-pane fade" id="class-add" role="tabpanel" aria-labelledby="add-tab">
+                                            <form onsubmit="alert('کلاس جدید ذخیره شد'); return false;">
+                                                <div class="row g-3">
+                                                    <!-- عکس -->
+                                                    <div class="col-md-12">
+                                                        <label class="form-label" for="class-image">عکس</label>
+                                                        <input class="form-control" type="file" id="class-image" accept="image/*" />
+                                                    </div>
+                                                    <!-- عنوان کلاس -->
+                                                    <div class="col-md-12">
+                                                        <label class="form-label" for="class-title">عنوان کلاس</label>
+                                                        <input class="form-control" type="text" id="class-title" placeholder="عنوان کلاس" required />
+                                                    </div>
+                                                    <!-- دسته‌بندی کلاس‌ها -->
+                                                    <div class="col-md-6">
+                                                        <label class="form-label" for="class-category">دسته‌بندی کلاس‌ها</label>
+                                                        <select class="form-select" id="class-category" required>
+                                                            <option value="">انتخاب کنید</option>
+                                                            <option value="programming">برنامه‌نویسی</option>
+                                                            <option value="design">طراحی</option>
+                                                            <option value="management">مدیریت</option>
+                                                            <option value="language">زبان</option>
+                                                        </select>
+                                                    </div>
+                                                    <!-- مربی -->
+                                                    <div class="col-md-6">
+                                                        <label class="form-label" for="class-coach">مربی</label>
+                                                        <select class="form-select" id="class-coach" required>
+                                                            <option value="">انتخاب کنید</option>
+                                                            <option value="ali-hosseini">علی حسینی</option>
+                                                            <option value="maryam-ahmadi">مریم احمدی</option>
+                                                            <option value="reza-karimi">رضا کریمی</option>
+                                                        </select>
+                                                    </div>
+                                                    <!-- روزهای کلاس (چک‌باکس) -->
+                                                    <div class="col-md-12">
+                                                        <label class="form-label">روزهای کلاس</label>
+                                                        <div class="d-flex flex-wrap gap-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" name="class-days" id="shanbe" value="شنبه">
+                                                                <label class="form-check-label" for="shanbe">شنبه</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" name="class-days" id="yekshanbe" value="یک‌شنبه">
+                                                                <label class="form-check-label" for="yekshanbe">یک‌شنبه</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" name="class-days" id="doshanbe" value="دوشنبه">
+                                                                <label class="form-check-label" for="doshanbe">دوشنبه</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" name="class-days" id="seshanbe" value="سه‌شنبه">
+                                                                <label class="form-check-label" for="seshanbe">سه‌شنبه</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" name="class-days" id="chaharshanbe" value="چهارشنبه">
+                                                                <label class="form-check-label" for="chaharshanbe">چهارشنبه</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" name="class-days" id="panjshanbe" value="پنج‌شنبه">
+                                                                <label class="form-check-label" for="panjshanbe">پنج‌شنبه</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" name="class-days" id="jome" value="جمعه">
+                                                                <label class="form-check-label" for="jome">جمعه</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- زمان کلاس -->
+                                                    <div class="col-md-12">
+                                                        <label class="form-label" for="class-time-type">نوع زمان کلاس</label>
+                                                        <select class="form-select" id="class-time-type" onchange="toggleTimeInput()" required>
+                                                            <option value="custom">زمان دلخواه (شروع-پایان)</option>
+                                                            <option value="canceled">کنسل شده</option>
+                                                            <option value="tba">متعاقباً اعلام می‌شود</option>
+                                                        </select>
+                                                        <div id="custom-time-input" class="mt-2">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <label class="form-label" for="class-start-time">زمان شروع</label>
+                                                                    <input class="form-control" type="time" id="class-start-time" required />
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label class="form-label" for="class-end-time">زمان پایان</label>
+                                                                    <input class="form-control" type="time" id="class-end-time" required />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- دکمه‌ها -->
+                                                    <div class="col-12 d-flex justify-content-between">
+                                                        <button type="reset" class="btn btn-label-secondary">انصراف</button>
+                                                        <button type="submit" class="btn btn-primary">ذخیره</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- اسکریپت‌ها -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // نمایش/مخفی کردن فیلدهای زمان دلخواه بر اساس انتخاب نوع زمان
+        function toggleTimeInput() {
+            const timeType = document.getElementById("class-time-type").value;
+            const customTimeInput = document.getElementById("custom-time-input");
+            if (timeType === "custom") {
+                customTimeInput.style.display = "block";
+                document.getElementById("class-start-time").required = true;
+                document.getElementById("class-end-time").required = true;
+            } else {
+                customTimeInput.style.display = "none";
+                document.getElementById("class-start-time").required = false;
+                document.getElementById("class-end-time").required = false;
+            }
+        }
+
+        // اجرای اولیه برای تنظیم حالت پیش‌فرض
+        document.addEventListener("DOMContentLoaded", function () {
+            toggleTimeInput();
+        });
+    </script>
+</body>
+</html>
