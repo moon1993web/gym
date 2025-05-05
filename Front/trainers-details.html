@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+  <title>Gymfit - جزئیات مربی</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="assets/img/favicon.svg" rel="shortcut icon" type="image/x-icon" />
+  
+  <link rel="stylesheet" href="assets/css/font-awesome.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/bootsnav.css">
+  <link rel="stylesheet" href="assets/css/owl.carousal.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+  <link rel="stylesheet" href="assets/css/sm-clean.css">
+  <link rel="stylesheet" href="assets/css/sm-core-css.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/fonts/flaticon.css">
+
+  <!-- استایل اختصاصی برای هاور عمودی با انیمیشن از راست به چپ -->
+  <style>
+    .trainer-img {
+      position: relative;
+      overflow: hidden;
+    }
+    .trainer-img .social_icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0; /* مخفی بودن اولیه */
+      transition: all 0.3s ease; /* انیمیشن نرم */
+    }
+    .trainer-img:hover .social_icon {
+      opacity: 1; /* ظاهر شدن با هاور */
+      transform: translate(-50%, -50%) translateX(0); /* حرکت به موقعیت اصلی */
+    }
+
+
+    .social_icon ul {
+      width: 8% !important;
+    border-radius: 10px!important;
+    }
+    .trainer-img .social_icon ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column; /* عمودی کردن آیکون‌ها */
+      align-items: center;
+    }
+    .trainer-img .social_icon ul li {
+      margin: 15px 0; /* فاصله بین آیکون‌ها */
+      opacity: 0;
+      transform: translateX(50px); /* شروع از سمت راست */
+      transition: all 0.3s ease; /* انیمیشن برای هر آیکون */
+    }
+    .trainer-img:hover .social_icon ul li {
+      opacity: 1;
+      transform: translateX(0); /* حرکت به چپ با هاور */
+    }
+    .trainer-img .social_icon ul li:nth-child(1) { transition-delay: 0.1s; }
+    .trainer-img .social_icon ul li:nth-child(2) { transition-delay: 0.2s; }
+    .trainer-img .social_icon ul li:nth-child(3) { transition-delay: 0.3s; }
+    .trainer-img .social_icon ul li a {
+      color: #fff;
+      font-size: 10px; /* اندازه آیکون‌ها */
+      background: rgba(0, 0, 0, 0.7); /* پس‌زمینه پیش‌فرض */
+      padding: 8px;
+      border-radius: 50%;
+      transition: background 0.3s ease;
+    }
+    .trainer-img .social_icon ul li a:hover {
+      background: #f39c12; /* رنگ هاور مشابه قالب GymFit */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- loader start -->
+  <div class="page_loader">
+    <img src="assets/img/loader.svg" alt="img">
+  </div>
+  <!-- loader end -->
+
+  <!-- header -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="main-nav" role="navigation">
+            <input id="main-menu-state" type="checkbox">
+            <label class="main-menu-btn" for="main-menu-state"><span class="main-menu-btn-icon"></span>کلید اصلی را تغییر دهید</label>
+            <h2 class="nav-brand"><a href="index.html"><img src="assets/img/logo.png" alt="بدنسازی" class="img-fluid"></a></h2>
+            <ul class="sm sm-clean" data-smartmenus-id="1559366433783545" id="main-menu">
+              <li><a href="index.html">خانه</a></li>
+              <li><a href="about.html">درباره ما</a></li>
+              <li><a href="services.html">خدمات</a></li>
+              <li><a href="trainers.html">مربی</a></li>
+              <li><a href="classes.html">کلاس</a></li>
+              <li><a href="blog.html">وبلاگ</a></li>
+              <li><a href="#">صفحات</a>
+                <ul>
+                  <li><a href="pricing.html">قیمت گذاری</a></li>
+                  <li><a href="coming-soon.html">به زودی</a></li>
+                  <li><a href="error.html">خطا</a></li>
+                </ul>
+              </li>
+              <li class="last_menu"><a href="contact.html">با ما تماس بگیرید</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
+
+  <!-- start header banner section -->
+  <div id="demo1" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image:url(assets/img/trainers_bg.png); height:524px;">
+        <div class="slider_text1">
+          <h1>جزئیات مربی</h1>
+        </div>
+        <div class="carousel-caption1">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="inner_page_title">
+                  <h2>جزئیات مربی</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end header banner section -->
+
+  <!-- start Trainer Details -->
+  <div class="instructor-details my-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+          <div class="trainer-img">
+            <img src="assets/img/instructors1.jpg" alt="تصویر مربی" class="img-fluid">
+            <div class="social_icon">
+              <ul>
+                <li><a href="https://twitter.com/tommyclark"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://facebook.com/tommyclark"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://instagram.com/tommyclark"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <div class="trainer-info">
+            <h2>تامی کلارک</h2>
+            <p><strong>حوزه تخصصی:</strong> رقص یوگا</p>
+            <h4><strong>توضیحات کوتاه:</strong> مربی با تجربه در زمینه یوگا و رقص با بیش از ۵ سال سابقه.</h4>
+            <p><strong>درجه تحصیلات:</strong> کارشناسی ارشد تربیت بدنی</p>
+            <p><strong>بیوگرافی:</strong> تامی کلارک یک مربی حرفه‌ای است که سال‌ها در زمینه آموزش یوگا و رقص فعالیت کرده و به صدها دانش‌آموز کمک کرده تا به اهداف تناسب اندام خود برسند.</p>
+            <p><strong>تلفن:</strong> ۰۹۱۲-۳۴۵-۶۷۸۹</p>
+            <p><strong>ایمیل:</strong> tommy.clark@example.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end Trainer Details -->
+
+  <!-- start footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="footer_con">
+            <img class="img-fluid" src="assets/img/logo.png"/>
+            <div class="footer_social">
+              <ul>
+                <li><a href="#"><i aria-hidden="true" class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i aria-hidden="true" class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i aria-hidden="true" class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i aria-hidden="true" class="fa fa-youtube-play"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="footer_center_con">
+            <ul class="footer_link">
+              <li><a href="index.html">خانه</a></li>
+              <li><a href="about.html">درباره ما</a></li>
+              <li><a href="classes.html">کلاس</a></li>
+              <li><a href="blog.html">وبلاگ</a></li>
+              <li><a href="contact.html">با ما تماس بگیرید</a></li>
+            </ul>
+            <div class="footer_border"></div>
+            <p>فوتبال و سرگرم کننده. برای فوتبال یا قطر EU هر میکروفون را تقویت می کند...</p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="news_letter_box">
+            <h3>برای خبرنامه مشترک شوید</h3>
+            <div class="card-box-input">
+              <form action="#" method="POST">
+                <input class="card-input" placeholder="Your Email...." required="" type="text"/>
+                <button class="input-img"> <img alt="" class="img-fluid" src="assets/img/paper-plane.png"/> </button>
+              </form>
+            </div>
+            <p>آخرین به روزرسانی ها را برای آخرین اخبار یوگا دریافت کنید</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+
+  <!-- start footer_bottom -->
+  <div class="footer_bootom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="copy_right">
+            <p>© 2019 GymFit. کلیه حقوق محفوظ است.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end footer_bottom -->
+
+  <!-- Bootstrap -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <!-- menu -->
+  <script src="assets/js/jquery.smartmenus.js"></script>
+  <!-- carousel slider -->
+  <script src="assets/js/owl1.js"></script>
+  <script src="assets/js/slick.js"></script>
+  <!-- Global Init -->
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>
